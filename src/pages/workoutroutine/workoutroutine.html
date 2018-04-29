@@ -1,0 +1,74 @@
+<!-- 
+styles file workoutroutine.scss
+-->
+<ion-header>
+  	<ion-navbar color="secondary">
+    	<ion-title>Core Strength</ion-title>
+  	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+				<h3>DURATION</h3>
+				<i class="ionfitness-duration"></i>
+				<p>20 MIN</p>
+			</ion-col>
+			<ion-col col-4>
+				<h3>WORKOUTS</h3>
+				<i class="ionfitness-workouts"></i>
+				<p>12</p>
+			</ion-col>
+			<ion-col col-4>
+				<h3>WORKOUTS TIME</h3>
+				<i class="ionfitness-workouts-time"></i>
+				<p>15 MIN</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-list>
+		<ion-item>
+			<i class="ionfitness-jump" item-start></i>
+			Jumping Jacks
+			<ion-note item-end>
+		      	50 Calories
+			</ion-note>
+		</ion-item>
+		<ion-item>
+			<i class="ionfitness-weightlifting" item-start></i>
+			Deadlift
+			<ion-note item-end>
+		      	45 Calories
+			</ion-note>
+		</ion-item>
+		<ion-item>
+			<i class="ionfitness-flexions" item-start></i>
+			Crunch
+			<ion-note item-end>
+		      	40 Calories
+			</ion-note>
+		</ion-item>
+		<ion-item>
+			<i class="ionfitness-step-up" item-start></i>
+			Step up
+			<ion-note item-end>
+		      	60 Calories
+			</ion-note>
+		</ion-item>
+		<ion-item>
+			<i class="ionfitness-wall-sit" item-start></i>
+			Wall Sit
+			<ion-note item-end>
+		      	30 Calories
+			</ion-note>
+		</ion-item>
+	</ion-list>
+
+	<div padding>
+		<button ion-button full color="secondary" round (click)="goToWorkout()">START NOW</button>
+	</div>
+
+</ion-content>

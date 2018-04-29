@@ -1,0 +1,51 @@
+<!-- 
+styles file login.scss
+(*) assigned classes
+-->
+
+<!-- *class bg-wrapper / content image -->
+<div class="bg-wrapper" style="background-image:url('assets/img/login/bg.jpg');">
+	<!-- *class backdrop / overlay background -->
+	<div class="backdrop"></div>
+
+	<ion-content padding>
+		<div class="aligner-wrapper">
+			<div class="aligner-item">
+				<!-- *class logo / image -->
+				<div class="logo">
+			        <img src="assets/img/login/logo.png" alt="Company">
+			    </div>
+		
+				<ion-list padding>
+					<ion-item>
+			      		<ion-icon item-left name="person"></ion-icon>
+						<ion-input type="text" placeholder="Username"></ion-input>
+					</ion-item>
+					<ion-item>
+						<ion-icon item-left name="lock"></ion-icon>
+						<ion-input type="password" placeholder="Password"></ion-input>
+					</ion-item>
+					<button ion-button color="secondary" block round (click)="openWorkouts()">SING IN</button>
+				</ion-list>
+		
+				<p text-right>
+					<small>Forgot Password?</small>
+				</p>
+				
+				<!-- *class social-buttons / content social -->
+				<div class="social-buttons">
+					<p>OR</p>
+					<button ion-button color="secondary" icon-only>
+						<ion-icon name='logo-facebook'></ion-icon>
+					</button>
+					<button ion-button color="secondary" icon-only>
+						<ion-icon name='logo-twitter'></ion-icon>
+					</button>
+					<button ion-button color="secondary" icon-only>
+						<ion-icon name='logo-googleplus'></ion-icon>
+					</button>
+				</div>
+			</div>	
+		</div>
+	</ion-content>
+</div>

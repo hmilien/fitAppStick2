@@ -1,0 +1,58 @@
+<!-- 
+styles file workouts.scss
+(*) assigned classes
+-->
+<ion-header>
+    <ion-navbar color="secondary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Workouts</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+    <!-- *class image-wrapper / content image -->
+    <div class="image-wrapper" (click)="goToWorkoutRoutine()">
+        <!-- *class backdrop / overlay background -->
+        <div class="backdrop"></div>
+        <!-- *class image / image -->
+        <div class="image" style="background-image:url('assets/img/workouts/1.jpg')"></div>
+        <!-- *class info-wrapper / content information -->
+        <div class="info-wrapper info-right">
+            <!-- *class title / title workout -->
+            <div class="title">Core Strength</div>
+            <!-- *class subtitle / information workout -->
+            <div class="subtitle">30 mins / 170 calories</div>
+        </div>
+    </div>
+
+    <div class="image-wrapper" (click)="goToWorkoutRoutine()">
+        <div class="backdrop"></div>
+        <div class="image" style="background-image:url('assets/img/workouts/2.jpg')"></div>
+        <div class="info-wrapper info-left">
+            <div class="title">Upper Body Workout</div>
+            <div class="subtitle">45 mins / 270 calories</div>
+        </div>
+    </div>
+
+    <div class="image-wrapper" (click)="goToWorkoutRoutine()">
+        <div class="backdrop"></div>
+        <div class="image" style="background-image:url('assets/img/workouts/3.jpg')"></div>
+        <div class="info-wrapper info-right">
+            <div class="title">Lover Body Workout</div>
+            <div class="subtitle">35 mins / 100 calories</div>
+        </div>
+    </div>
+
+    <div class="image-wrapper" (click)="goToWorkoutRoutine()">
+        <div class="backdrop"></div>
+        <div class="image" style="background-image:url('assets/img/workouts/4.jpg')"></div>
+        <div class="info-wrapper info-left">
+            <div class="title">Morning Workout</div>
+            <div class="subtitle">15 mins / 60 calories</div>
+        </div>
+    </div>
+
+</ion-content>

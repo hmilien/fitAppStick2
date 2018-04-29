@@ -1,0 +1,76 @@
+<!-- 
+styles file workout.scss
+(*) assigned classes
+-->
+<ion-header no-border>
+  <ion-navbar transparent>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<!-- *class bg-wrapper / content image -->
+	<div class="bg-wrapper" style="background-image:url('assets/img/workout/bg.jpg');">
+		<!-- *class backdrop / overlay background -->
+		<div class="backdrop"></div>
+		<!-- *class progress-wrapper / content progress circle -->
+		<div class="progress-wrapper">
+			<!-- *class current / information progress -->
+			<div class="current" [ngStyle]="getOverlayStyle()">{{ current }}s</div>
+			<!-- round-progress / plugin added angular-svg-round-progressbar -->
+			<round-progress [current]="current"
+		      [max]="max"
+		      [stroke]="stroke"
+		      [radius]="radius"
+		      [semicircle]="semicircle"
+		      [rounded]="rounded"
+		      [responsive]="responsive"
+		      [clockwise]="clockwise"
+		      [color]="gradient ? 'url(#gradient)' : color"
+		      [background]="background"
+		      [duration]="duration"
+		      [animation]="animation"
+		      [animationDelay]="animationDelay">
+		    </round-progress>
+		</div>
+	
+		<ion-grid>
+			<ion-row no-padding>
+					<ion-col>
+						<ion-card>
+							<ion-card-content>
+								<i class="ionfitness-jump"></i>
+								<p>Jumping Jacks</p>
+							</ion-card-content>
+						</ion-card>
+					</ion-col>
+					<ion-col>
+						<ion-card>
+							<ion-card-content>
+								<i class="ionfitness-calories"></i>
+								<p>50 Calories</p>
+							</ion-card-content>
+						</ion-card>
+					</ion-col>
+				</ion-row>
+		</ion-grid>
+		<!-- *class controls-wrapper / content controls -->
+		<div class="controls-wrapper">
+			<!-- *class prev / button prev -->
+			<button ion-button class="prev" clear icon-only>
+				<ion-icon name='ios-arrow-back' is-active="false"></ion-icon>
+		    </button>
+			<!-- *class pause / button pause -->
+		    <button ion-button class="pause"  clear icon-only>
+				<ion-icon name='ios-pause' is-active="false"></ion-icon>
+		    </button>
+			<!-- *class next / button next -->
+		    <button ion-button class="next" clear icon-only>
+				<ion-icon name='ios-arrow-forward' is-active="false"></ion-icon>
+		    </button>
+		</div>
+
+		<button ion-button color="secondary" round>STOP</button>
+	</div>
+</ion-content>
+

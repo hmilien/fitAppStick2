@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/theming/
+// http://ionicframework.com/docs/v2/theming/
 
 
 // App Global Sass
@@ -14,3 +14,25 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@import "menu";
+
+ion-alert {
+	.alert-wrapper {
+		background-color: map-get($custom-colors, dark-light) !important;
+		.alert-title {
+			color: map-get($colors, light);
+		}
+		.alert-sub-title {
+			color: lighten(map-get($custom-colors, dark-light), 30%);
+		}
+		.alert-button {
+			background-color: map-get($colors, secondary);
+			border-top: 0;
+			color: map-get($colors, light);
+			&.activated {
+				background-color: darken(map-get($colors, secondary), 5%);
+			}
+		}
+	}
+}

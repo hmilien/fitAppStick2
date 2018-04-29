@@ -1,1 +1,29 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+    <ion-content>
+        <ion-list>
+            <ion-item>
+                <ion-avatar>
+                    <img src="assets/img/avatar.jpg">
+                </ion-avatar>
+                <h2>Heavens Milien</h2>
+                <p>
+                    <ion-icon name="ios-pin-outline"></ion-icon>
+                    Montreal
+                </p>
+            </ion-item>
+            <button menuClose ion-item *ngFor="let p of pages" [class.activepage]="activeMenu(p)" (click)="openPage(p)">
+                <ion-icon name="{{p.icon}}" item-left></ion-icon>
+                {{p.title}}
+            </button>
+            <button menuClose ion-item (click)="openLogout()">
+                <ion-icon name="ios-log-out-outline" item-left></ion-icon>
+                Logout
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

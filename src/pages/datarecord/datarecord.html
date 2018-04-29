@@ -1,0 +1,78 @@
+<!-- 
+styles file datarecord.scss
+(*) assigned classes
+-->
+
+<ion-header>
+    <ion-navbar color="secondary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Data Record</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!-- *class progress-wrapper / content progress circle -->
+    <div class="progress-wrapper">
+        <!-- *class current / information progress -->
+        <div class="current" [ngStyle]="getOverlayStyle()">
+            {{ current }}
+            <p>Cal</p>
+        </div>
+        <!-- round-progress / plugin added angular-svg-round-progressbar -->
+        <round-progress [current]="current" [max]="max" [stroke]="stroke" [radius]="radius" [semicircle]="semicircle" [rounded]="rounded" [responsive]="responsive" [clockwise]="clockwise" [color]="gradient ? 'url(#gradient)' : color" [background]="background"
+            [duration]="duration" [animation]="animation" [animationDelay]="animationDelay">
+        </round-progress>
+    </div>
+
+    <!-- *class data / content information -->
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <!-- progress-bar / created component -->
+                <progress-bar [progress]="65"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <!-- *class type / type information -->
+                <ion-col class="type">Activity Time</ion-col>
+                <!-- *class data / information -->
+                <ion-col class="data">105h</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="55"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Lost Weight</ion-col>
+                <ion-col class="data">7Kg</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="85"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Distance</ion-col>
+                <ion-col class="data">8,32mi</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="70"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Steps</ion-col>
+                <ion-col class="data">152052</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
