@@ -1,0 +1,103 @@
+.ios, .md {
+	page-assessment {
+		ion-content {
+			background-color: map-get($colors, dark);
+			.assessment-wrapper {
+				background-position: 50% 50%;
+				background-size: cover;
+				padding: 20px 0;
+				position: relative;
+				width: 100%;
+				.backdrop {
+				    background-color: rgba(map-get($colors, dark), 0.8);
+				    height: 100%;
+		    	    position: absolute;
+		    	    top: 0;
+				    width: 100%;
+			    }
+				.progress-wrapper {
+			    	position: relative;
+			    	.current {
+		    		    position: absolute;
+					    color: map-get($colors, secondary);
+					    font-weight: 100;
+					    line-height: 1;
+					    ion-avatar {
+					    	height: 100px;
+					    	padding: 10px;
+					    	width: 100px;
+					    	img {
+					    		border-radius: 50%;
+					    	}
+					    }
+					    .percentage {
+					    	font-size: 26px;
+						    left: 125%;
+					    	position: absolute;
+						    top: 50%;
+						    transform: translateY(-50%);
+					    }
+			    	}
+			    	round-progress {
+			    		margin: auto;
+			    		path {
+			    			stroke-linecap: round;
+			    		}
+			    	}
+			    }
+				.item {
+					background-color: transparent;
+					border: 0;
+					color: map-get($colors, secondary);
+					text-align: center;
+					.item-inner {
+						border: 0;
+					}
+				}
+			}
+			.data-assessment {
+				ion-grid {
+					background-color: map-get($custom-colors, dark-light);
+					text-align: center;
+					padding: 10px 5px;
+					ion-row {
+						ion-col {
+							h2 {
+								color: lighten( map-get($custom-colors, dark-light) , 25%);
+								font-size: 2rem;
+								font-weight: 400;
+								margin: 0;
+							}
+							p {
+								color: lighten( map-get($custom-colors, dark-light) , 15%);
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+			.data-bodily {
+				ion-grid {
+					ion-row {
+						ion-col {
+							ion-card {
+								background-color: map-get($custom-colors, dark-light);
+								margin: 0;
+								text-align: center;
+								width: 100%;
+								h2 {
+									color: map-get($colors, secondary);
+									font-size: 2.4rem;
+								}
+								small {
+									color: lighten( map-get($custom-colors, dark-light) , 15%);
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Tabs } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AlertController } from 'ionic-angular';
@@ -27,8 +27,8 @@ export class MyApp {
         // used for an example of ngFor and navigation
         this.pages = [
             { title: 'Workouts', component: Workouts, icon: 'ios-man-outline' },
-            { title: 'Data Record', component: DataRecord, icon: 'ios-list-box-outline' },
-            { title: 'Profile', component: Profile, icon: 'ios-person-outline' }
+            { title: 'Progress', component: DataRecord, icon: 'ios-list-box-outline' },
+            { title: 'Profile', component: Profile, icon: 'ios-person-outline' },
         ];
 
         this.activePage = this.pages[0];

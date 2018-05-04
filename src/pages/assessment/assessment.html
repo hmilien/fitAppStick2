@@ -1,0 +1,134 @@
+<!-- 
+styles file assessment.scss
+(*) assigned classes
+-->
+<ion-header>
+	<ion-navbar color="secondary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Profile</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<!-- *class profile-wrapper / content image -->
+	<div class="assessment-wrapper" style="background-image:url('assets/img/profile/bg.jpg');">
+		<!-- *class backdrop / overlay background -->
+		<div class="backdrop"></div>
+		<!-- *class progress-wrapper / content progress circle -->
+		<div class="progress-wrapper">
+			<!-- *class current / information progress -->
+			<div class="current" [ngStyle]="getOverlayStyle()">
+				<ion-avatar>
+	                <img src="assets/img/avatar.jpg">
+	                <div class="percentage">
+	                    60%
+	                </div>
+	            </ion-avatar>
+			</div>
+			<!-- round-progress / plugin added angular-svg-round-progressbar -->
+			<round-progress [current]="current"
+		      [max]="max"
+		      [stroke]="stroke"
+		      [radius]="radius"
+		      [semicircle]="semicircle"
+		      [rounded]="rounded"
+		      [responsive]="responsive"
+		      [clockwise]="clockwise"
+		      [color]="gradient ? 'url(#gradient)' : color"
+		      [background]="background"
+		      [duration]="duration"
+		      [animation]="animation"
+		      [animationDelay]="animationDelay">
+		    </round-progress>
+		</div>
+        <ion-item>
+            <h2>Heavens Milien</h2>
+            <p>
+				<ion-icon name="ios-pin-outline"></ion-icon>
+            	Montreal,Canada
+            </p>
+        </ion-item>
+    </div>
+
+	<!-- *class data-profile / information profile -->
+	<div class="data-assessment">
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<h2>24</h2>
+					<p>Age</p>
+				</ion-col>
+				<ion-col>
+					<h2>58kg</h2>
+					<p>Weight</p>
+				</ion-col>
+				<ion-col>
+					<h2>165cm</h2>
+					<p>Height</p>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+
+	<!-- *class data-bodily / information bodily -->
+	<div class="data-bodily">
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>BODY WATHER</small>
+							<h2>54.5%</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>BODY FAT</small>
+							<h2>14.4%</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>BONE MASS</small>
+							<h2>6.4LB</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>MUSCLE MASS</small>
+							<h2>124.4LB</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>BMI</small>
+							<h2>23.5</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col>
+					<ion-card>
+						<ion-card-content>
+							<small>SKIN TEMP</small>
+							<h2>97 C</h2>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+</ion-content>
