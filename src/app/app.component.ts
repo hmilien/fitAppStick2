@@ -8,6 +8,8 @@ import { Workouts } from '../pages/workouts/workouts';
 import { DataRecord } from '../pages/datarecord/datarecord';
 import { Profile } from '../pages/profile/profile';
 import { Login } from '../pages/login/login';
+import { Assessment } from '../pages/assessment/assessment';
+
 
 @Component({
     selector: 'page-menu',
@@ -29,6 +31,7 @@ export class MyApp {
             { title: 'Workouts', component: Workouts, icon: 'ios-man-outline' },
             { title: 'Progress', component: DataRecord, icon: 'ios-list-box-outline' },
             { title: 'Profile', component: Profile, icon: 'ios-person-outline' },
+            { title: 'Assessment', component: Assessment, icon: 'ios-person-outline' },
         ];
 
         this.activePage = this.pages[0];
