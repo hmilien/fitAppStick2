@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Programs } from '../../pages/programs/programs';
 
 @Component({
-  selector: 'page-assessment',
-  templateUrl: 'assessment.html',
+  selector: 'page-programs',
+  templateUrl: 'programs.html',
 })
-export class Assessment {
-
-  	current: number = 60;
+export class Programs {
+	current: number = 64;
 	max: number = 100;
-	stroke: number = 6;
-	radius: number = 50;
+	stroke: number = 7;
+	radius: number = 70;
 	semicircle: boolean = false;
 	rounded: boolean = false;
 	responsive: boolean = false;
@@ -44,8 +42,4 @@ export class Assessment {
 		  'font-size': this.radius / 2.5 + 'px'
 		};
 	}
-	openPrograms(){
-		this.navCtrl.setRoot(Programs);
-	};
-
 }

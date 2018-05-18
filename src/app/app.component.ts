@@ -9,6 +9,7 @@ import { DataRecord } from '../pages/datarecord/datarecord';
 import { Profile } from '../pages/profile/profile';
 import { Login } from '../pages/login/login';
 import { Assessment } from '../pages/assessment/assessment';
+import { Programs } from '../pages/programs/programs';
 
 
 @Component({

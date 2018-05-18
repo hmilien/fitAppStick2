@@ -16,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {RoundProgressModule} from 'angular-svg-round-progressbar';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { Assessment } from '../pages/assessment/assessment';
+import { Programs } from '../pages/programs/programs';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { Assessment } from '../pages/assessment/assessment';
         Assessment,
         WorkoutRoutine,
         Workout,
-        ProgressBarComponent
+        ProgressBarComponent,
+        Programs
     ],
     imports: [
         BrowserModule,
@@ -43,7 +45,8 @@ import { Assessment } from '../pages/assessment/assessment';
         Login,
         Assessment,
         WorkoutRoutine,
-        Workout
+        Workout,
+        Programs
     ],
     providers: [
         StatusBar,
