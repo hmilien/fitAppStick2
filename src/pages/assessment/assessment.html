@@ -17,79 +17,94 @@ styles file assessment.scss
 		<div class="data-assessment">
 			<ion-grid>
 				<ion-row>
-					<ion-col>
-						<h2>24</h2>
-						<p>Age</p>
-					</ion-col>
-					<ion-col>
-						<h2>58kg</h2>
-						<p>Weight</p>
-					</ion-col>
-					<ion-col>
-						<h2>165cm</h2>
-						<p>Height</p>
-					</ion-col>
-				</ion-row>
-			</ion-grid>
-		</div>
-	
-		<!-- *class data-bodily / information bodily -->
-		<div class="data-bodily">
-			<ion-grid>
-				<ion-row>
-					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>BODY WATHER</small>
-								<h2>54.5%</h2>
-							</ion-card-content>
-						</ion-card>
-					</ion-col>
-					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>BODY FAT</small>
-								<h2>14.4%</h2>
-							</ion-card-content>
-						</ion-card>
-					</ion-col>
+					<h2>Body measurements</h2>
 				</ion-row>
 				<ion-row>
 					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>BONE MASS</small>
-								<h2>6.4LB</h2>
-							</ion-card-content>
-						</ion-card>
+						<ion-item>
+								<ion-label>Biceps</ion-label>
+								<ion-input type="text"></ion-input>
+						</ion-item>
 					</ion-col>
 					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>MUSCLE MASS</small>
-								<h2>124.4LB</h2>
-							</ion-card-content>
-						</ion-card>
+						<ion-item>
+								<ion-label>Triceps</ion-label>
+								<ion-input type="text"></ion-input>
+						</ion-item>
 					</ion-col>
 				</ion-row>
 				<ion-row>
-					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>BMI</small>
-								<h2>23.5</h2>
-							</ion-card-content>
-						</ion-card>
-					</ion-col>
-					<ion-col>
-						<ion-card>
-							<ion-card-content>
-								<small>SKIN TEMP</small>
-								<h2>97 C</h2>
-							</ion-card-content>
-						</ion-card>
-					</ion-col>
-				</ion-row>
+						<ion-col>
+							<ion-item>
+									<ion-label>Weight</ion-label>
+									<ion-input type="text"></ion-input>
+							</ion-item>
+						</ion-col>
+						<ion-col>
+							<ion-item>
+									<ion-label>Height</ion-label>
+									<ion-input type="text" ></ion-input>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<ion-item>
+								<ion-label>Target heart rate </ion-label>
+								<ion-input type="text" ></ion-input>
+							</ion-item>
+						</ion-col>
+						<ion-col>
+								<ion-item>
+									<ion-label>Age </ion-label>
+									<ion-input type="text" ></ion-input>
+								</ion-item>
+							</ion-col>
+					</ion-row>
+					<ion-row>
+							<ion-col>
+								<ion-item>
+									<ion-label>Activity level</ion-label>
+									<ion-select [(ngModel)]="gender">
+										<ion-option value="M">Regular</ion-option>
+										<ion-option value="C">Highly trained</ion-option>
+									</ion-select>
+								</ion-item>
+							</ion-col>
+						</ion-row>
+					<ion-row>
+							<ion-col>
+								<ion-item>
+									<ion-label>Calculation Model</ion-label>
+									<ion-select [(ngModel)]="gender">
+										<ion-option value="M">MRI</ion-option>
+										<ion-option value="C">CFI</ion-option>
+									</ion-select>
+								</ion-item>
+							</ion-col>
+						</ion-row>
+						<ion-row>
+								<ion-col>
+									<ion-item>
+										<ion-label>Goal </ion-label>
+										<ion-select [(ngModel)]="gender">
+											<ion-option value="M">Loose Weight</ion-option>
+											<ion-option value="C">Gain muscle</ion-option>
+											<ion-option value="C">Get ripped</ion-option>
+											<ion-option value="C">Flexibility</ion-option>
+										</ion-select>
+									</ion-item>
+								</ion-col>
+							</ion-row>
+					<ion-row>
+						<ion-col>
+								<button ion-button color="secondary" block round (click)="openWorkouts()">Save</button>
+						</ion-col>
+						<ion-col>
+								<button ion-button color="secondary" block round (click)="openWorkouts()">Recommandation</button>
+						</ion-col>
+					</ion-row>		
+					
 			</ion-grid>
 		</div>
 	</ion-content>
