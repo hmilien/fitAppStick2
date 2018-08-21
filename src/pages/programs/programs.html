@@ -13,46 +13,52 @@ styles file programs.scss
 
 <ion-content>
 	
-	<!-- *class image-wrapper / content image -->
-	<div class="image-wrapper">
-			<!-- *class backdrop / overlay background -->
-			<div class="backdrop"></div>
-			<!-- *class image / image -->
-			<div class="image" style="background-image:url('assets/img/workouts/1.jpg')"></div>
-			<!-- *class info-wrapper / content information -->
-			<div class="info-wrapper info-right">
-					<!-- *class title / title workout -->
-					<div class="title">Core Strength</div>
-					<!-- *class subtitle / information workout -->
-					<div class="subtitle">30 mins / 170 calories</div>
-			</div>
-	</div>
-
-	<div class="image-wrapper" (click)="goToWorkoutRoutine()">
-			<div class="backdrop"></div>
-			<div class="image" style="background-image:url('assets/img/workouts/2.jpg')"></div>
-			<div class="info-wrapper info-left">
-					<div class="title">Upper Body Workout</div>
-					<div class="subtitle">45 mins / 270 calories</div>
-			</div>
-	</div>
-
-	<div class="image-wrapper" (click)="goToWorkoutRoutine()">
-			<div class="backdrop"></div>
-			<div class="image" style="background-image:url('assets/img/workouts/3.jpg')"></div>
-			<div class="info-wrapper info-right">
-					<div class="title">Lover Body Workout</div>
-					<div class="subtitle">35 mins / 100 calories</div>
-			</div>
-	</div>
-
-	<div class="image-wrapper" (click)="goToWorkoutRoutine()">
-			<div class="backdrop"></div>
-			<div class="image" style="background-image:url('assets/img/workouts/4.jpg')"></div>
-			<div class="info-wrapper info-left">
-					<div class="title">Morning Workout</div>
-					<div class="subtitle">15 mins / 60 calories</div>
-			</div>
-	</div>
+	  <!-- *class data / content information -->
+	  <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <program></program>
+            </ion-row>
+            <ion-row>
+                <!-- *class type / type information -->
+                <ion-col class="type">Build mucscle Time</ion-col>
+                <!-- *class data / information -->
+                <ion-col class="data">105h</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="55"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Lost Weight</ion-col>
+                <ion-col class="data">7Kg</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="85"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Body fat</ion-col>
+                <ion-col class="data">8,32mi</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="data">
+        <ion-card-content>
+            <ion-row>
+                <progress-bar [progress]="70"></progress-bar>
+            </ion-row>
+            <ion-row>
+                <ion-col class="type">Stamenia</ion-col>
+                <ion-col class="data">152052</ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
 
 </ion-content>

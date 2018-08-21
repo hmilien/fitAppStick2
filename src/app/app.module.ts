@@ -17,6 +17,8 @@ import {RoundProgressModule} from 'angular-svg-round-progressbar';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
+import { ProgramComponent } from '../components/program/program';
+
 
 @NgModule({
     declarations: [
@@ -29,7 +31,8 @@ import { Programs } from '../pages/programs/programs';
         WorkoutRoutine,
         Workout,
         ProgressBarComponent,
-        Programs
+        Programs,
+        ProgramComponent
     ],
     imports: [
         BrowserModule,
