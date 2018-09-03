@@ -1,4 +1,26 @@
 <!-- Generated template for the ProgramComponent component -->
 <div>
-  {{text}}
+    <ion-grid>
+      <ion-row> 
+        <ion-col>
+          <ion-row><small>{{name}}</small></ion-row>
+          <ion-row><ion-avatar class="avatar" >
+              <img src="http://www.precision-spine.com/wp-content/uploads/2015/09/person-icon.png">
+              </ion-avatar>
+            </ion-row>
+          <ion-row>
+              <button ion-button color="secondary" icon-only></button>
+              <button ion-button color="secondary" icon-only></button> 
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row><small>{{title}}</small> </ion-row>
+          <ion-row><small>{{summary}} </small></ion-row>
+        </ion-col>
+        <ion-col>
+        <ion-row><small>{{description}}</small></ion-row> 
+        <ion-row><small>{{statistics}}</small></ion-row> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </div>

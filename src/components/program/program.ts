@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output, Input } from '@angular/core';
 
 /**
  * Generated class for the ProgramComponent component.
@@ -12,11 +12,26 @@ import { Component, Output } from '@angular/core';
 })
 export class ProgramComponent {
   
-  @Output() text:string;
-
+  @Input()name :string = "";
+  @Input() description :string = "";
+  @Input() summary :string = "";
+  @Input() title :string = "";
+  @Input() statistics :string = "";
+  
   constructor() {
-    console.log('Hello ProgramComponent Component');
-    this.text = 'Hello World';
+    
+    this.name = "High intensity workout";
+    this.description = "Great workout for burning fat, boosting endurance,and building explosive speed and strength.";
+    this.statistics = "2M downloads";
+    this.summary = "High intensity interval training (HIIT) is one of the best ways to get fit quick";
+    this.title = "Developped by K Michael";
+  }
+
+  preview(){
+
+  }
+  buy(){
+    
   }
 
 }
