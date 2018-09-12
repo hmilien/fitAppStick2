@@ -17,42 +17,29 @@ styles file programs.scss
 	  <ion-card class="data">
         <ion-card-content>
             <ion-row>
-                <program></program>
+                <program [summary]='test'></program>
             </ion-row>
         </ion-card-content>
     </ion-card>
     <ion-card class="data">
         <ion-card-content>
             <ion-row>
-                <progress-bar [progress]="55"></progress-bar>
-            </ion-row>
-            <ion-row>
-                <ion-col class="type">Lost Weight</ion-col>
-                <ion-col class="data">7Kg</ion-col>
+                <program> name="test 2"</program>
             </ion-row>
         </ion-card-content>
     </ion-card>
     <ion-card class="data">
         <ion-card-content>
             <ion-row>
-                <progress-bar [progress]="85"></progress-bar>
-            </ion-row>
-            <ion-row>
-                <ion-col class="type">Body fat</ion-col>
-                <ion-col class="data">8,32mi</ion-col>
+                <program> [name]="test 2"</program>
             </ion-row>
         </ion-card-content>
     </ion-card>
     <ion-card class="data">
         <ion-card-content>
             <ion-row>
-                <progress-bar [progress]="70"></progress-bar>
-            </ion-row>
-            <ion-row>
-                <ion-col class="type">Stamenia</ion-col>
-                <ion-col class="data">152052</ion-col>
+                <program> [name]="test 2"</program>
             </ion-row>
         </ion-card-content>
     </ion-card>
-
 </ion-content>
