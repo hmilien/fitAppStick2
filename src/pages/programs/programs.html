@@ -9,12 +9,13 @@ styles file programs.scss
 			</button>
 			<ion-title>Programs</ion-title>
 </ion-navbar>
+<filter></filter>
 </ion-header>
 
-<ion-content>
-	
-	  <!-- *class data / content information -->
-	  <ion-card class="data">
+
+<ion-content>   
+	<!-- *class data / content information -->
+	<ion-card class="data">
         <ion-card-content>
             <ion-row>
                 <program [summary]='test'></program>
@@ -24,7 +25,7 @@ styles file programs.scss
     <ion-card class="data">
         <ion-card-content>
             <ion-row>
-                <program> name="test 2"</program>
+                <program> [name]="test 2"</program>
             </ion-row>
         </ion-card-content>
     </ion-card>

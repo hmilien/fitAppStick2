@@ -15,7 +15,7 @@ export class ProgramComponent {
     @Input()
     name :string = "High intensity workout";
     @Input() 
-    description :string = "Great workout for burning fat, boosting endurance,and building explosive speed and strength.";
+    description :string = "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6"
     @Input() 
     summary :string = "High intensity interval training (HIIT) is one of the best ways to get fit quick";
     @Input() 

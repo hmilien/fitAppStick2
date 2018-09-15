@@ -18,6 +18,7 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
 import { ProgramComponent } from '../components/program/program';
+import {FilterComponent} from '../components/filter/filter';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ProgramComponent } from '../components/program/program';
         Workout,
         ProgressBarComponent,
         Programs,
-        ProgramComponent
+        ProgramComponent,
+        FilterComponent
     ],
     imports: [
         BrowserModule,
