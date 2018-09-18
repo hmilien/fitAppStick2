@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 /**
  * Generated class for the FilterComponent component.
@@ -12,11 +13,18 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
 
+  @Output() footerClicked = new EventEmitter();
   text: string;
 
   constructor() {
     console.log('Hello FilterComponent Component');
     this.text = 'Hello World';
   }
+
+  handleClick(){
+  
+  }
+
+
 
 }

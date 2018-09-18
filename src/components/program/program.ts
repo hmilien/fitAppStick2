@@ -1,4 +1,4 @@
-import { Component, Output, Input } from '@angular/core';
+import { Component, Output, Input} from '@angular/core';
 
 /**
  * Generated class for the ProgramComponent component.
@@ -32,5 +32,4 @@ export class ProgramComponent {
     buy(){
       
     }
-
 }

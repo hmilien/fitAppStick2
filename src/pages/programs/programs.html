@@ -12,35 +12,15 @@ styles file programs.scss
 <filter></filter>
 </ion-header>
 
-
 <ion-content>   
-	<!-- *class data / content information -->
-	<ion-card class="data">
-        <ion-card-content>
-            <ion-row>
-                <program [summary]='test'></program>
-            </ion-row>
-        </ion-card-content>
-    </ion-card>
-    <ion-card class="data">
-        <ion-card-content>
-            <ion-row>
-                <program> [name]="test 2"</program>
-            </ion-row>
-        </ion-card-content>
-    </ion-card>
-    <ion-card class="data">
-        <ion-card-content>
-            <ion-row>
-                <program> [name]="test 2"</program>
-            </ion-row>
-        </ion-card-content>
-    </ion-card>
-    <ion-card class="data">
-        <ion-card-content>
-            <ion-row>
-                <program> [name]="test 2"</program>
-            </ion-row>
-        </ion-card-content>
-    </ion-card>
+    <div *ngFor='let programItem of programList'>
+        	<!-- *class data / content information -->
+	<ion-card class="data" (click)="goToProgramContent()">
+            <ion-card-content>
+                <ion-row>
+                    <program></program>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+    </div>
 </ion-content>

@@ -19,6 +19,7 @@ import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
 import { ProgramComponent } from '../components/program/program';
 import {FilterComponent} from '../components/filter/filter';
+import {ProgramContent} from '../pages/program-content/program-content';
 
 
 @NgModule({
@@ -34,7 +35,9 @@ import {FilterComponent} from '../components/filter/filter';
         ProgressBarComponent,
         Programs,
         ProgramComponent,
-        FilterComponent
+        FilterComponent,
+        ProgramContent,
+        
     ],
     imports: [
         BrowserModule,
@@ -51,7 +54,8 @@ import {FilterComponent} from '../components/filter/filter';
         Assessment,
         WorkoutRoutine,
         Workout,
-        Programs
+        Programs,
+        ProgramContent
     ],
     providers: [
         StatusBar,

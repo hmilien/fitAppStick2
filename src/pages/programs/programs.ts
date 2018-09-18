@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Events } from 'ionic-angular';
+import { ProgramContent } from '../program-content/program-content';
 
 @Component({
   selector: 'page-programs',
@@ -22,9 +23,10 @@ export class Programs {
 	animations: string[] = [];
 	gradient: boolean = false;
 	realCurrent: number = 0;
+	programList:any[];
 
-	constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+	constructor(public navCtrl: NavController, public navParams: NavParams, public events:Events) {
+		this.getProgramRecommandation();
 	}
 
 
@@ -42,4 +44,37 @@ export class Programs {
 		  'font-size': this.radius / 2.5 + 'px'
 		};
 	}
+	getProgramRecommandation(){
+		this.programList = [
+			{	"name" :"High intensity workout",
+				"description" : "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6",
+				"summary" : "High intensity interval training (HIIT) is one of the best ways to get fit quick",
+				"title" : "Developped by K Michael",
+				"statistics" : "2M downloads"
+			},
+			{	"name" :"High intensity workout",
+				"description" : "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6",
+				"summary" : "High intensity interval training (HIIT) is one of the best ways to get fit quick",
+				"title" : "Developped by K Michael",
+				"statistics" : "2M downloads"
+			},
+			{	"name" :"High intensity workout",
+				"description" : "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6",
+				"summary" : "High intensity interval training (HIIT) is one of the best ways to get fit quick",
+				"title" : "Developped by K Michael",
+				"statistics" : "2M downloads"
+			},	
+			
+			{	"name" :"High intensity workout",
+			"description" : "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6",
+			"summary" : "High intensity interval training (HIIT) is one of the best ways to get fit quick",
+			"title" : "Developped by K Michael",
+			"statistics" : "2M downloads"
+			}
+		];
+	}
+
+	goToProgramContent(_event) {
+		this.navCtrl.push(ProgramContent);
+	  }
 }
