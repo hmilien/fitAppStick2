@@ -20,6 +20,7 @@ import { Programs } from '../pages/programs/programs';
 import { ProgramComponent } from '../components/program/program';
 import {FilterComponent} from '../components/filter/filter';
 import {ProgramContent} from '../pages/program-content/program-content';
+import {Trainers} from '../pages/trainers/trainers';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import {ProgramContent} from '../pages/program-content/program-content';
         ProgramComponent,
         FilterComponent,
         ProgramContent,
-        
+        Trainers
     ],
     imports: [
         BrowserModule,
@@ -55,7 +56,8 @@ import {ProgramContent} from '../pages/program-content/program-content';
         WorkoutRoutine,
         Workout,
         Programs,
-        ProgramContent
+        ProgramContent,
+        Trainers
     ],
     providers: [
         StatusBar,
