@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { FilterComponent } from './filter/filter';
+import { TrainerItemComponent } from './trainer-item/trainer-item';
 @NgModule({
-	declarations: [FilterComponent],
+	declarations: [FilterComponent,
+    TrainerItemComponent],
 	imports: [],
-	exports: [FilterComponent]
+	exports: [FilterComponent,
+    TrainerItemComponent]
 })
 export class ComponentsModule {}

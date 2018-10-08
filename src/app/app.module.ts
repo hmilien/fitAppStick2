@@ -19,6 +19,7 @@ import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
 import { ProgramComponent } from '../components/program/program';
 import {FilterComponent} from '../components/filter/filter';
+import {TrainerItemComponent} from '../components/trainer-item/trainer-item'
 import {ProgramContent} from '../pages/program-content/program-content';
 import {Trainers} from '../pages/trainers/trainers';
 
@@ -37,6 +38,7 @@ import {Trainers} from '../pages/trainers/trainers';
         Programs,
         ProgramComponent,
         FilterComponent,
+        TrainerItemComponent,
         ProgramContent,
         Trainers
     ],
