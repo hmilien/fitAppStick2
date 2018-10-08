@@ -13,18 +13,11 @@ import { NavController } from 'ionic-angular';
 })
 export class FilterComponent {
 
-  @Output() footerClicked = new EventEmitter();
   text: string;
 
   constructor() {
     console.log('Hello FilterComponent Component');
     this.text = 'Hello World';
   }
-
-  handleClick(){
-  
-  }
-
-
 
 }

@@ -5,7 +5,6 @@ import { TrainerItemComponent } from './trainer-item/trainer-item';
 	declarations: [FilterComponent,
     TrainerItemComponent],
 	imports: [],
-	exports: [FilterComponent,
-    TrainerItemComponent]
+	exports: [FilterComponent, TrainerItemComponent]
 })
 export class ComponentsModule {}

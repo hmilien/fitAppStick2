@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-//import {TrainerItemComponent} from '../../components/trainer-item/trainer-item'
+import {TrainerItemComponent} from '../../components/trainer-item/trainer-item'
 
 
 
