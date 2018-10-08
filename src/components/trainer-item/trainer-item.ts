@@ -13,16 +13,11 @@ import { Component, Input } from '@angular/core';
 export class TrainerItemComponent {
 
     @Input()
-    name :string = "High intensity workout";
+    name :string = "D Michael";
     @Input() 
-    description :string = "Program content Workout: 20; Nutrition plan : 2 Supplement plan : 6"
-    @Input() 
-    summary :string = "High intensity interval training (HIIT) is one of the best ways to get fit quick";
-    @Input() 
-    title :string = "Developped by K Michael";
+    bio :string = "Dante trained a range of clients, including weekend warriors, desk jockeys and the elderly. He believes exercise is fundamental to living a well-balanced life, and truly enjoys helping people.";
     @Input() 
     statistics :string = "2M downloads";
-    
     constructor() {
     }
 

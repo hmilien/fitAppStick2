@@ -15,14 +15,14 @@
 </ion-header>
 
 <ion-content>   
-    <div *ngFor='let programItem of programList'>
-        	<!-- *class data / content information -->
-	      <ion-card class="data" (click)="goToProgramContent()">
-            <ion-card-content>
-                <ion-row>
-                    <trainer-item></trainer-item>
-                </ion-row>
-            </ion-card-content>
-        </ion-card> 
-    </div>
-  </ion-content>
+  <div *ngFor='let trainerItem of trainerList'>
+        <!-- *class data / content information -->
+<ion-card class="data">
+          <ion-card-content>
+              <ion-row>
+                  <trainer-item></trainer-item>
+              </ion-row>
+          </ion-card-content>
+      </ion-card>
+  </div>
+</ion-content>
