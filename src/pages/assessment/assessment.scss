@@ -1,7 +1,7 @@
 .ios, .md {
 	page-assessment {
 		ion-content {
-			background-color: map-get($colors, dark);
+			background-color: map-get($colors, secondary);
 			.assessment-wrapper {
 				background-position: 50% 50%;
 				background-size: cover;
@@ -9,7 +9,7 @@
 				position: relative;
 				width: 100%;
 				.backdrop {
-				    background-color: rgba(map-get($colors, dark), 0.8);
+				    background-color: rgba(map-get($colors, secondary), 0.8);
 				    height: 100%;
 		    	    position: absolute;
 		    	    top: 0;

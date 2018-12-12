@@ -7,11 +7,19 @@ program {
         max-height: 25px !important; //any size
         }
 
-        button {
-            height: 10px;
+     /*    button {
+            height: 6px;
             margin: 0 1px;
             width: 10px;
             max-width: 10;
-            max-height: 10;
+            max-height: 6;
+        } */
+
+        button {
+            border-radius: 50%;
+            font-size: 1.2rem;
+            height: 10px;
+            margin: 0 3px;
+            width: 20px;
         }
 }
