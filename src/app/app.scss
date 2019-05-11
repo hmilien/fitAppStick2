@@ -34,5 +34,9 @@ ion-alert {
 				background-color: darken(map-get($colors, secondary), 5%);
 			}
 		}
+	
+	}
+	.alert-radio-label {
+		color: map-get($colors, white);
 	}
 }

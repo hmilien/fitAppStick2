@@ -14,10 +14,10 @@ styles file assessment.scss
 	<ion-content>
 		<!-- *class data-profile / information profile -->
 		<div class="data-assessment">
-				<div class="assessement-title">
-						<h2>Body measurements</h2>
-				</div>
 			<ion-grid>
+				<ion-row style="height:2.5pc">
+					<h2>Body measurements</h2>
+				</ion-row>
 				<ion-row>
 					<ion-item>
 							<ion-label>Biceps</ion-label>
@@ -68,7 +68,7 @@ styles file assessment.scss
 						<ion-item>
 							<ion-label>Calculation Model</ion-label>
 							<ion-select [(ngModel)]="gender">
-								<ion-option value="M">MRI</ion-option>
+								<ion-option value="M"> MRI</ion-option>
 								<ion-option value="C">CFI</ion-option>
 							</ion-select>
 						</ion-item>
@@ -76,7 +76,7 @@ styles file assessment.scss
 					<ion-row>
 						<ion-item>
 							<ion-label>Goal </ion-label>
-							<ion-select [(ngModel)]="gender">
+							<ion-select [(ngModel)]="gender" >
 								<ion-option value="M">Loose Weight</ion-option>
 								<ion-option value="C">Gain muscle</ion-option>
 								<ion-option value="C">Get ripped</ion-option>

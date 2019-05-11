@@ -33,7 +33,8 @@ export class MyApp {
             { title: 'Progress', component: DataRecord, icon: 'ios-list-box-outline' },
             { title: 'Profile', component: Profile, icon: 'ios-person-outline' },
             { title: 'Assessment', component: Assessment, icon: 'ios-person-outline' },
-            { title: 'Trainers', component: Trainers, icon: 'ios-person-outline' }
+            { title: 'Trainers', component: Trainers, icon: 'ios-person-outline' },
+            { title: 'Programs', component: Programs, icon: 'ios-list-box-outline' }
         ];
 
         this.activePage = this.pages[0];

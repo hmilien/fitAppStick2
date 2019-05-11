@@ -1,11 +1,9 @@
 .ios, .md {
 	page-assessment {
 		ion-content {
-			background-color: map-get($colors, dark);
-			
-			.data-assessment {
+			background-color: map-get($colors,dark);
+				.data-assessment {
 				ion-grid {
-					background-color: map-get($custom-colors, dark-light);
 					text-align: center;
 					padding: 10px 5px;
 					ion-row {
@@ -14,6 +12,9 @@
 							font-size: 2rem;
 							font-weight: 400;
 							margin: 0;
+						}
+						.item-radio.item ion-label {
+							color: red; //your color here
 						}
 						ion-col {
 							h2 {
@@ -28,6 +29,7 @@
 							}
 						}
 					}
+					
 				}
 			}
 			.data-bodily {
@@ -52,6 +54,21 @@
 
 					}
 				}
+			}
+			.option {
+				color: white
+			}
+		
+			ion-option .list{
+			color: white
+			}
+			.ion-option-items .item{
+			color: white
+			}
+			.select-popover {
+			font-family: SFNSDisplay !important;
+			font-size: 8px !important;
+			max-width: 100% !important;
 			}
 		}
 	}
