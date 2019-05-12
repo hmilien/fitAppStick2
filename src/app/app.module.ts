@@ -22,11 +22,13 @@ import {FilterComponent} from '../components/filter/filter';
 import {TrainerItemComponent} from '../components/trainer-item/trainer-item'
 import {ProgramContent} from '../pages/program-content/program-content';
 import {Trainers} from '../pages/trainers/trainers';
+import { Dashboard } from '../pages/dashboard/dashboard';
 
 
 @NgModule({
     declarations: [
         MyApp,
+        Dashboard,
         Workouts,
         DataRecord,
         Profile,
@@ -50,6 +52,7 @@ import {Trainers} from '../pages/trainers/trainers';
     bootstrap: [IonicApp],
     entryComponents: [
         MyApp,
+        Dashboard,
         Workouts,
         DataRecord,
         Profile,

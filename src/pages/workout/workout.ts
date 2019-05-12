@@ -27,7 +27,6 @@ export class Workout {
 
 	}
 
-
 	getOverlayStyle() {
 		let isSemi = this.semicircle;
 		let transform = (isSemi ? '' : 'translateY(-50%) ') + 'translateX(-50%)';

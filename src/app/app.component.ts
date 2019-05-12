@@ -11,6 +11,7 @@ import { Login } from '../pages/login/login';
 import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
 import {Trainers} from '../pages/trainers/trainers';
+import { Dashboard } from '../pages/dashboard/dashboard';
 
 @Component({
     selector: 'page-menu',
@@ -29,11 +30,12 @@ export class MyApp {
 
         // used for an example of ngFor and navigation
         this.pages = [
-            { title: 'Workouts', component: Workouts, icon: 'ios-man-outline' },
+            { title: 'Dashboard', component: Dashboard, icon: 'ios-list-box-outline' },
+            { title: 'Workouts', component: Workouts, icon: 'ios-walk-outline' },
             { title: 'Progress', component: DataRecord, icon: 'ios-list-box-outline' },
             { title: 'Profile', component: Profile, icon: 'ios-person-outline' },
-            { title: 'Assessment', component: Assessment, icon: 'ios-person-outline' },
-            { title: 'Trainers', component: Trainers, icon: 'ios-person-outline' },
+            { title: 'Assessment', component: Assessment, icon: 'ios-body' },
+            { title: 'Trainers', component: Trainers, icon: 'ios-contact' },
             { title: 'Programs', component: Programs, icon: 'ios-list-box-outline' }
         ];
 
