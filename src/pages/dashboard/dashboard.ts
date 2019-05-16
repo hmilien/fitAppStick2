@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams,Events } from 'ionic-angular';
+import { NavController, NavParams,Events, Popover } from 'ionic-angular';
 import { Programs } from '../programs/programs';
 import { DataRecord } from '../datarecord/datarecord';
-
+import { PopoverActionComponent } from '../../components/popover-action/popover-action';
+import { PopoverController } from 'ionic-angular'
 /**
  * Generated class for the Dashboard page.
  *
@@ -16,20 +17,28 @@ import { DataRecord } from '../datarecord/datarecord';
 export class Dashboard {
 
   trainerList:any[];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+	constructor(public navCtrl: NavController, 
+							public navParams: NavParams, 
+							public popoverController: PopoverController) {
+		
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TrainersPage');
   }
 
-
 	openPrograms(){
-		
 		this.navCtrl.push(Programs);
 	};
 
 	openProgress(){
 		this.navCtrl.push(DataRecord);
 	};
+
+	presentPopover(myEvent: any) {
+		let popover = this.popoverController.create(PopoverActionComponent);
+    popover.present({
+      ev: myEvent
+    });
+	}
 }

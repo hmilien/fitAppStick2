@@ -23,6 +23,7 @@ import {TrainerItemComponent} from '../components/trainer-item/trainer-item'
 import {ProgramContent} from '../pages/program-content/program-content';
 import {Trainers} from '../pages/trainers/trainers';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { PopoverActionComponent } from '../components/popover-action/popover-action';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { Dashboard } from '../pages/dashboard/dashboard';
         FilterComponent,
         TrainerItemComponent,
         ProgramContent,
-        Trainers
+        Trainers,
+        PopoverActionComponent,
     ],
     imports: [
         BrowserModule,
@@ -62,7 +64,8 @@ import { Dashboard } from '../pages/dashboard/dashboard';
         Workout,
         Programs,
         ProgramContent,
-        Trainers
+        Trainers,
+        PopoverActionComponent,
     ],
     providers: [
         StatusBar,

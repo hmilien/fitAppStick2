@@ -20,6 +20,13 @@
 					text-align: center;
 				}
 			}
+
+			ion-fab[bottom] {
+				bottom: 30%;
+			  }
+			  ion-fab[right] {
+				right: 20%;
+			  }
 			
 		}
 	}
