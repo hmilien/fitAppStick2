@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { NavController, NavParams, Events } from 'ionic-angular';
+import { Workouts } from '../../pages/workouts/workouts';
+import { Programs } from '../../pages/programs/programs';
 /**
  * Generated class for the PopoverActionComponent.
  *
@@ -7,13 +9,29 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'popoverAction',
-  templateUrl: 'popoverAction.html'
+  selector: 'popover-action',
+  templateUrl: 'popover-action.html'
 })
 export class PopoverActionComponent {
 
-  constructor() {}
+    constructor(public navCtrl: NavController, public navParams: NavParams, public events:Events) {
+      
+    }
 
-   i:any = 0;
+    workouts(_event){
+      this.navCtrl.push(Workouts);
+    }
+
+    findProgram(){
+      this.navCtrl.push(Programs);
+    }
+
+    logMeal(){
+      
+    }
+
+    logSupplement(){
+      
+    }
    
   }

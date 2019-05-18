@@ -1,3 +1,15 @@
 popover-action {
-
+    .text-on-bottom .button-inner {
+        flex-direction: column;
+      }  
+      
+      .button {
+        font-size: 10px;
+        line-height: 10px; // Add
+      }
+     .button-icon .icon {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 3px !important;
+      }
 }

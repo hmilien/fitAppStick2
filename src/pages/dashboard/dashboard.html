@@ -17,38 +17,50 @@
       <ion-card class="data" (click)="openProgress()">
           <ion-card-content>
               <ion-title>Progress</ion-title>
-                 <ion-row>Program Progress</ion-row>
+              <p>
+                <!-- progress-bar / created component -->
+                <progress-bar [progress]="65"></progress-bar>
+              </p>
+              <p>
+                  <!-- *class type / type information -->
+                  <ion-col class="type">Activity Time</ion-col>
+                  <!-- *class data / information -->
+                  <ion-col class="data">105h</ion-col>
+              </p>
             </ion-card-content>
         </ion-card>
       
         <ion-card class="data">
             <ion-card-content >
               <ion-title>Next Events</ion-title>
-              <ion-row>Upcoming workout  </ion-row>
-              <ion-row>Upcoming supplement</ion-row>
-              <ion-row>Upcoming measurement</ion-row>
-            </ion-card-content>
+              <ul class="my-nav">
+                <li>Upcoming workout</li>
+                <li>Upcoming supplement</li>
+                <li>Upcoming measurement</li>
+              </ul>
+             </ion-card-content>
           </ion-card>
       
         <ion-card class="data">
           <ion-card-content>
-              <ion-title>Social feeds</ion-title>
-            <ion-row>New comments from your trainers</ion-row>
+              <ion-title medium>Social feeds</ion-title>
+            <p>New comments from your trainers</p>
           </ion-card-content>
         </ion-card>
       
         <ion-card class="data" (click)="openPrograms()"> 
           <ion-card-content>
-            <ion-title>Programs</ion-title>
-            <ion-row>New recommended program for you...</ion-row>
+            <ion-title>Recommendation</ion-title>
+            <ul class="my-nav">
+              <li>New High intensity program </li>
+              <li>New supplements recommandation</li>
+            </ul>
           </ion-card-content>
         </ion-card>
-      
+        <ion-fab bottom right>
+          <button ion-fab (click)="presentPopover($event)">
+              <ion-icon name="add"></ion-icon>
+          </button>
+    </ion-fab>
   </div>
- 
-  <ion-fab bottom left>
-      <button ion-fab (click)="presentPopover($event)">
-          <ion-icon name="add"></ion-icon>
-      </button>
-</ion-fab>
 </ion-content>

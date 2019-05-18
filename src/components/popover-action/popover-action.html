@@ -1,8 +1,31 @@
-<!-- Generated template for the PopoverAction component -->
-<ion-list>
-    <ion-list-header>Ionic</ion-list-header>
-    <button ion-item (click)="close()">Learn Ionic</button>
-    <button ion-item (click)="close()">Documentation</button>
-    <button ion-item (click)="close()">Showcase</button>
-    <button ion-item (click)="close()">GitHub Repo</button>
-  </ion-list>
+<!-- Generated template for the popover-action component -->
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <button size="small" ion-item (click)="workouts()" clear block class="button button-icon" >
+              <ion-icon name="ios-walk-outline"></ion-icon>
+              start workout
+          </button>
+      </ion-col>
+      <ion-col>
+          <button size="small" ion-item (click)="findProgram()" class="button button-icon" >
+              <ion-icon name="ios-list-box-outline"></ion-icon>
+              Find program
+          </button>
+      </ion-col>
+      <ion-col>
+          <button size="small" ion-item (click)="logMeal()" class="button button-icon" >
+              <ion-icon name="ios-restaurant"></ion-icon>
+              Log meal
+          </button>
+      </ion-col>
+      <ion-col>
+          <button size="small" ion-item (click)="logSupplement()" class="button button-icon">
+              <ion-icon name="ios-beaker"></ion-icon>
+              Log supplement
+          </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
