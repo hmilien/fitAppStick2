@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Events } from 'ionic-angular';
 
 /**
  * Generated class for the TrainerItemComponent component.
@@ -18,13 +19,15 @@ export class TrainerItemComponent {
     bio :string = "Dante trained a range of clients, including weekend warriors, desk jockeys and the elderly. He believes exercise is fundamental to living a well-balanced life, and truly enjoys helping people.";
     @Input() 
     statistics :string = "2M downloads";
-    constructor() {
+    
+    events:Events;
+
+    constructor(_events:Events) {
+
+      this.events = _events;
     }
 
-    preview(){
-
-    }
-    buy(){
-      
+    findProgram(){
+      this.events.publish('trainer:findProgram');
     }
   }

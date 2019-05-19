@@ -25,10 +25,20 @@ export class Programs {
 	realCurrent: number = 0;
 	programList:any[];
 
-	constructor(public navCtrl: NavController, public navParams: NavParams, public events:Events) {
+	events:Events;
+
+	constructor(public navCtrl: NavController, public navParams: NavParams, public _events:Events) {
+		this.events = _events;
 		this.getProgramRecommandation();
+		this.subscribeToEvents(); 
+
 	}
 
+	subscribeToEvents() {
+		this.events.subscribe('preview', () => {
+		this.navCtrl.push(ProgramContent);
+		});
+	};
 
 	getOverlayStyle() {
 		let isSemi = this.semicircle;
@@ -73,8 +83,4 @@ export class Programs {
 			}
 		];
 	}
-
-	goToProgramContent(_event) {
-		this.navCtrl.push(ProgramContent);
-	  }
 }

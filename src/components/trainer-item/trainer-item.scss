@@ -1,3 +1,17 @@
 trainer-item {
-
+    .button {
+        fill:clear;
+        font-size: 10px;
+        line-height: 10px; // Add
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+     .button-icon .icon {
+        display: block;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
 }
+

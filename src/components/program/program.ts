@@ -1,4 +1,5 @@
 import { Component, Output, Input} from '@angular/core';
+import { Events } from 'ionic-angular';
 
 /**
  * Generated class for the ProgramComponent component.
@@ -23,11 +24,15 @@ export class ProgramComponent {
     @Input() 
     statistics :string = "2M downloads";
     
-    constructor() {
+    events:Events;
+
+    constructor(_events:Events) {
+
+      this.events = _events;
     }
 
     preview(){
-
+      this.events.publish('preview');
     }
     buy(){
       
