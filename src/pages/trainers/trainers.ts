@@ -14,11 +14,20 @@ import {ProgramContent} from '../program-content/program-content'
 })
 export class Trainers {
 
-  trainerList:any[];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.getTrainerList();
+	trainerList:any[];
+	events:Events;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public _events:Events) {
+		this.events = _events;
+		this.getTrainerList();
+		this.subscribeToEvents();
   }
 
+
+	subscribeToEvents() {
+		this.events.subscribe('trainer:findProgram', () => {
+		this.navCtrl.push(ProgramContent);
+		});
+	};
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TrainersPage');

@@ -24,6 +24,7 @@ import {ProgramContent} from '../pages/program-content/program-content';
 import {Trainers} from '../pages/trainers/trainers';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { PopoverActionComponent } from '../components/popover-action/popover-action';
+import {CustomFood} from '../pages/customFood/customFood';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { PopoverActionComponent } from '../components/popover-action/popover-act
         ProgramContent,
         Trainers,
         PopoverActionComponent,
+        CustomFood,
     ],
     imports: [
         BrowserModule,
@@ -66,6 +68,7 @@ import { PopoverActionComponent } from '../components/popover-action/popover-act
         ProgramContent,
         Trainers,
         PopoverActionComponent,
+        CustomFood
     ],
     providers: [
         StatusBar,

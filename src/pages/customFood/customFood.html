@@ -1,0 +1,89 @@
+<!-- 
+styles file food.scss
+(*) assigned classes
+-->
+<ion-header>
+		<ion-navbar color="secondary">
+			<button ion-button menuToggle>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+			<ion-title>CustomFood</ion-title>
+		</ion-navbar>
+	</ion-header>
+	
+	<ion-content>
+		<!-- *class data-profile / information profile -->
+		<div class="data-assessment">
+			<ion-grid>
+				<ion-row style="height:2.5pc">
+					<h2>Body measurements</h2>
+				</ion-row>
+				<ion-row>
+					<ion-item>
+							<ion-label>Biceps</ion-label>
+							<ion-input type="text"></ion-input>
+					</ion-item>
+				</ion-row>
+				<ion-row>
+					<ion-item>
+							<ion-label>Triceps</ion-label>
+							<ion-input type="text"></ion-input>
+					</ion-item>
+				</ion-row>
+				<ion-row>
+					<ion-item>
+							<ion-label>Weight</ion-label>
+							<ion-input type="text"></ion-input>
+					</ion-item>
+				</ion-row>	
+				<ion-row>
+					<ion-item>
+						<ion-label>Height</ion-label>
+						<ion-input type="text" ></ion-input>
+					</ion-item>
+				</ion-row>	
+					
+				<ion-row>
+					<ion-item>
+							<ion-label>Target heart rate </ion-label>
+							<ion-input type="text" ></ion-input>
+					</ion-item>
+				</ion-row>
+				<ion-row>
+						<ion-item>
+							<ion-label>Age </ion-label>
+							<ion-input type="text" ></ion-input>
+						</ion-item>
+				</ion-row>
+				<ion-row>	
+					<ion-item>
+						<ion-label>Activity level</ion-label>
+						<ion-select [(ngModel)]="gender">
+							<ion-option value="M">Regular</ion-option>
+							<ion-option value="C">Highly trained</ion-option>
+						</ion-select>
+					</ion-item>
+				</ion-row>
+					<ion-row>
+						<ion-item>
+							<ion-label>Calculation Model</ion-label>
+							<ion-select [(ngModel)]="gender">
+								<ion-option value="M"> MRI</ion-option>
+								<ion-option value="C">CFI</ion-option>
+							</ion-select>
+						</ion-item>
+					</ion-row>
+					<ion-row>
+						<ion-item>
+							<ion-label>Goal </ion-label>
+							<ion-select [(ngModel)]="gender" >
+								<ion-option value="M">Loose Weight</ion-option>
+								<ion-option value="C">Gain muscle</ion-option>
+								<ion-option value="C">Get ripped</ion-option>
+								<ion-option value="C">Flexibility</ion-option>
+							</ion-select>
+						</ion-item>
+					</ion-row>
+			</ion-grid>
+		</div>
+	</ion-content>

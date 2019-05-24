@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, Events } from 'ionic-angular';
 import { Workouts } from '../../pages/workouts/workouts';
 import { Programs } from '../../pages/programs/programs';
+import { CustomFood } from '../../pages/customFood/customFood';
 /**
  * Generated class for the PopoverActionComponent.
  *
@@ -27,7 +28,7 @@ export class PopoverActionComponent {
     }
 
     logMeal(){
-      
+      this.navCtrl.push(CustomFood);
     }
 
     logSupplement(){

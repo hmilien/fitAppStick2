@@ -15,19 +15,21 @@
 <ion-content>   
   <div>
       <ion-card class="data" (click)="openProgress()">
-          <ion-card-content>
-              <ion-title>Progress</ion-title>
-              <p>
-                <!-- progress-bar / created component -->
-                <progress-bar [progress]="65"></progress-bar>
-              </p>
-              <p>
-                  <!-- *class type / type information -->
-                  <ion-col class="type">Activity Time</ion-col>
-                  <!-- *class data / information -->
-                  <ion-col class="data">105h</ion-col>
-              </p>
-            </ion-card-content>
+          <button ion-item> 
+              <ion-card-content>
+                  <ion-title>Progress</ion-title>
+                  <p>
+                    <!-- progress-bar / created component -->
+                    <progress-bar [progress]="65"></progress-bar>
+                  </p>
+                  <p>
+                      <!-- *class type / type information -->
+                      <ion-col class="type">Activity Time</ion-col>
+                      <!-- *class data / information -->
+                      <ion-col class="data">105h</ion-col>
+                  </p>
+                </ion-card-content>
+          </button> 
         </ion-card>
       
         <ion-card class="data">
@@ -49,13 +51,15 @@
         </ion-card>
       
         <ion-card class="data" (click)="openPrograms()"> 
-          <ion-card-content>
-            <ion-title>Recommendation</ion-title>
-            <ul class="my-nav">
-              <li>New High intensity program </li>
-              <li>New supplements recommandation</li>
-            </ul>
-          </ion-card-content>
+            <button ion-item> 
+                <ion-card-content>
+                    <ion-title>Recommendation</ion-title>
+                    <ul class="my-nav">
+                      <li>New High intensity program </li>
+                      <li>New supplements recommandation</li>
+                    </ul>
+                  </ion-card-content>
+              </button>
         </ion-card>
         <ion-fab bottom right>
           <button ion-fab (click)="presentPopover($event)">
