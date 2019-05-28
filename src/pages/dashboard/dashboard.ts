@@ -4,6 +4,7 @@ import { Programs } from '../programs/programs';
 import { DataRecord } from '../datarecord/datarecord';
 import { PopoverActionComponent } from '../../components/popover-action/popover-action';
 import { PopoverController } from 'ionic-angular'
+import { Social } from '../social/social';
 /**
  * Generated class for the Dashboard page.
  *
@@ -35,6 +36,10 @@ export class Dashboard {
 		this.navCtrl.push(DataRecord);
 	};
 
+	openSocial(){
+		this.navCtrl.push(Social);
+	};
+	
 	presentPopover(myEvent: any) {
 		let popover = this.popoverController.create(PopoverActionComponent);
     popover.present({

@@ -43,11 +43,13 @@
              </ion-card-content>
           </ion-card>
       
-        <ion-card class="data">
+        <ion-card class="data" (click)="openSocial()">
+            <button ion-item> 
           <ion-card-content>
               <ion-title medium>Social feeds</ion-title>
             <p>New comments from your trainers</p>
           </ion-card-content>
+        </button>
         </ion-card>
       
         <ion-card class="data" (click)="openPrograms()"> 

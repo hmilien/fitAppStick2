@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-customFood',
-  templateUrl: 'customFood.html',
+  selector: 'page-social',
+  templateUrl: 'social.html',
 })
-export class CustomFood {
+export class Social {
 
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 

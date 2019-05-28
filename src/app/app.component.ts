@@ -12,6 +12,7 @@ import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
 import {Trainers} from '../pages/trainers/trainers';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Social } from '../pages/social/social';
 
 @Component({
     selector: 'page-menu',
@@ -36,7 +37,8 @@ export class MyApp {
             { title: 'Profile', component: Profile, icon: 'ios-person-outline' },
             { title: 'Assessment', component: Assessment, icon: 'ios-body' },
             { title: 'Trainers', component: Trainers, icon: 'ios-contact' },
-            { title: 'Programs', component: Programs, icon: 'ios-list-box-outline' }
+            { title: 'Programs', component: Programs, icon: 'ios-list-box-outline' },
+            { title: 'Social Feeds', component: Social, icon: 'ios-list-box-outline' }
         ];
 
         this.activePage = this.pages[0];
