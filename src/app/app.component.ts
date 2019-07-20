@@ -38,7 +38,7 @@ export class MyApp {
             { title: 'Assessment', component: Assessment, icon: 'ios-body' },
             { title: 'Trainers', component: Trainers, icon: 'ios-contact' },
             { title: 'Programs', component: Programs, icon: 'ios-list-box-outline' },
-            { title: 'Social Feeds', component: Social, icon: 'ios-list-box-outline' }
+            { title: 'Social Feeds', component: Social, icon: 'logo-twitch' }
         ];
 
         this.activePage = this.pages[0];

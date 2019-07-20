@@ -8,6 +8,9 @@ styles file assessment.scss
 				<ion-icon name="menu"></ion-icon>
 			</button>
 			<ion-title>Assessment</ion-title>
+			<ion-buttons end>
+				<button ion-button color="black" block round (click)="save()">Save</button>
+			</ion-buttons>
 		</ion-navbar>
 	</ion-header>
 	
@@ -21,7 +24,7 @@ styles file assessment.scss
 				<ion-row>
 					<ion-item>
 							<ion-label>Biceps</ion-label>
-							<ion-input type="text"></ion-input>
+							<ion-input type="text" class="ion-input"></ion-input>
 					</ion-item>
 				</ion-row>
 				<ion-row>
@@ -58,9 +61,9 @@ styles file assessment.scss
 				<ion-row>	
 					<ion-item>
 						<ion-label>Activity level</ion-label>
-						<ion-select [(ngModel)]="gender">
-							<ion-option value="M">Regular</ion-option>
-							<ion-option value="C">Highly trained</ion-option>
+						<ion-select [(ngModel)]="gender" class="select-popover">
+							<ion-option value="M" class="option">Regular</ion-option>
+							<ion-option value="C" class="option">Highly trained</ion-option>
 						</ion-select>
 					</ion-item>
 				</ion-row>

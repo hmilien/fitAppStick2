@@ -1,24 +1,24 @@
 .ios, .md {
 	page-assessment {
 		ion-content {
-			background-color: map-get($colors,dark);
+			background-color: map-get($colors, dark);
 				.data-assessment {
 				ion-grid {
 					text-align: center;
 					padding: 10px 5px;
 					ion-row {
-						h2 {
-							color: lighten( map-get($custom-colors, dark-light) , 25%);
-							font-size: 2rem;
-							font-weight: 400;
+						ion-item {
+							background-color: map-get($custom-colors, dark-light);
 							margin: 0;
+							text-align: left;
+							width: 100%;						
 						}
-						.item-radio.item ion-label {
-							color: red; //your color here
+						.ion-input{
+							color: white;
 						}
 						ion-col {
 							h2 {
-								color: lighten( map-get($custom-colors, dark-light) , 25%);
+								color:  map-get($colors, secondary);
 								font-size: 2rem;
 								font-weight: 400;
 								margin: 0;
@@ -32,37 +32,14 @@
 					
 				}
 			}
-			.data-bodily {
-				ion-grid {
-					ion-row {
-						ion-col {
-							ion-card {
-								background-color: white;
-								margin: 0;
-								text-align: center;
-								width: 100%;
-								h2 {
-									color: map-get($colors, blue);
-									font-size: 2.4rem;
-								}
-								small {
-									color: white;
-									font-weight: 600;
-								}
-							}
-						}
-
-					}
-				}
-			}
 			.option {
-				color: white
+				color: red
 			}
 		
 			ion-option .list{
 			color: white
 			}
-			.ion-option-items .item{
+			.ion-option .item{
 			color: white
 			}
 			.select-popover {
