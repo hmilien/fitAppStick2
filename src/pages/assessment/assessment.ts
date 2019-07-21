@@ -48,7 +48,7 @@ export class Assessment {
 		this.navCtrl.setRoot(Programs);
 	};
 
-	save(){
+	edit(){
 
 	};
 

@@ -3,34 +3,32 @@
     <ion-grid>
       <ion-row> 
         <ion-col>
-          <ion-row><small>
+          <ion-row>
               <span style='font-weight: bold;'> {{name}}</span>
-          </small></ion-row>
+          </ion-row>
           <ion-row><ion-avatar class="avatar" >
               <img src="http://www.precision-spine.com/wp-content/uploads/2015/09/person-icon.png">
               </ion-avatar>
           </ion-row>
         </ion-col>
         <ion-col>
-          <ion-row><small>
+          <ion-row>
               <span style='font-weight: bold;'>Trainer bio</span>
-          </small> </ion-row>
-          <ion-row><small>{{bio}} </small></ion-row>
+           </ion-row>
+          <ion-row text-left>{{bio}} </ion-row>
         </ion-col>
         <ion-col>
         <ion-row >
-          <small>
-              <span style='font-weight: bold;'>Trainer stats</span>
+           <span style='font-weight: bold;'>Trainer stats</span>
            <ion-row>Followers :10000</ion-row> 
            <ion-row>Likes:259933</ion-row> 
            <ion-row>Downloads:28433</ion-row> 
            <ion-row>Rating :</ion-row> 
            <ion-row>Comments:</ion-row> 
            <ion-row>Programs:33</ion-row> 
-           <ion-row>Article:54</ion-row> 
-        </small>
+           <ion-row>Article:54</ion-row>       
         </ion-row> 
-          <ion-row><small>{{statistics}}</small></ion-row> 
+          <ion-row>{{statistics}}</ion-row> 
           <ion-row>
               <button  ion-button icon-only clear>
                   <ion-icon name="ios-thumbs-up"  slot="icon-only" color="secondary"></ion-icon>
