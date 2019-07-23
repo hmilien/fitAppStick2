@@ -20,7 +20,13 @@
 					text-align: center;
 				}
 			}
-			
+
+			ion-card {
+				background-color:map-get($colors,dark);
+				margin: 0;
+				text-align: left;
+				width: 100%;			
+			}
 		}
 	}
 }

@@ -1,0 +1,26 @@
+program-details {
+    background-color: map-get($custom-colors, dark-light);
+    ion-avatar img  
+    {
+        width:100% !important;
+        height : 100% !important;
+        max-width: 25px !important;  //any size
+        max-height: 25px !important; //any size
+    }
+    button {
+        border-radius: 50%;
+        font-size: 1.2rem;
+        height: 10px;
+        margin: 0 3px;
+        width: 20px;
+        background-color: transparent;
+    }
+    ion-grid{
+        ion-row {
+            background-color: map-get($custom-colors, dark);
+            color: white;
+            font-size: 1.0rem;                                          
+        }
+    }
+        
+}

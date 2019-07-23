@@ -17,7 +17,7 @@ import {RoundProgressModule} from 'angular-svg-round-progressbar';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { Assessment } from '../pages/assessment/assessment';
 import { Programs } from '../pages/programs/programs';
-import { ProgramComponent } from '../components/program/program';
+import { ProgramDetailsComponent } from '../components/program-details/program-details';
 import {FilterComponent} from '../components/filter/filter';
 import {TrainerItemComponent} from '../components/trainer-item/trainer-item'
 import {ProgramContent} from '../pages/program-content/program-content';
@@ -42,7 +42,7 @@ import { Social } from '../pages/social/social';
         Workout,
         ProgressBarComponent,
         Programs,
-        ProgramComponent,
+        ProgramDetailsComponent,
         FilterComponent,
         TrainerItemComponent,
         ProgramContent,

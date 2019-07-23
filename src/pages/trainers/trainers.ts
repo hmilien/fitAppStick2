@@ -22,7 +22,6 @@ export class Trainers {
 		this.subscribeToEvents();
   }
 
-
 	subscribeToEvents() {
 		this.events.subscribe('trainer:findProgram', () => {
 		this.navCtrl.push(ProgramContent);

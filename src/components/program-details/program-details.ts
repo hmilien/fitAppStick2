@@ -8,10 +8,10 @@ import { Events } from 'ionic-angular';
  * Components.
  */
 @Component({
-  selector: 'program',
-  templateUrl: 'program.html'
+  selector: 'program-details',
+  templateUrl: 'program-details.html'
 })
-export class ProgramComponent {
+export class ProgramDetailsComponent {
   
     @Input()
     name :string = "High intensity workout";

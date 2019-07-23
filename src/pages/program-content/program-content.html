@@ -9,36 +9,43 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Program content</ion-title>
+        <ion-title>Program description</ion-title>
     </ion-navbar>
   </ion-header>
 
-  <ion-content padding>
-    <ion-title>
-      Program Description
-    </ion-title>
-    <ion-card class="data">
-      <ion-card-header>
-          Basic Strength and Muscle
-      </ion-card-header>
-      <ion-card-content>
-          {{description}}
-      </ion-card-content>
-    </ion-card>
-      <ion-card class="data">
-        <ion-card-header>
-           Nutrition plan
-        </ion-card-header>
-        <ion-card-content>
-            {{nutritionPlan}}
-        </ion-card-content>
-      </ion-card>
-      <ion-card class="data">
-          <ion-card-header>
-             Supplement plan
-          </ion-card-header>
-          <ion-card-content>
-              {{supplementPlan}}
-          </ion-card-content>
-        </ion-card>
+  <ion-content padding> 
+    <ion-grid>
+    <ion-row >
+        <ion-card >
+            <ion-card-header>
+                Basic Strength and Muscle
+            </ion-card-header>
+            <ion-card-content>
+                {{description}}
+            </ion-card-content>
+          </ion-card>         
+    </ion-row>
+    
+    <ion-row>
+        <ion-card>
+            <ion-card-header>
+               Nutrition plan
+            </ion-card-header>
+            <ion-card-content>
+                {{nutritionPlan}}
+            </ion-card-content>
+          </ion-card>    
+    </ion-row>   
+    <ion-row>
+        <ion-card>
+            <ion-card-header>
+               Supplement plan
+            </ion-card-header>
+            <ion-card-content>
+                {{supplementPlan}}
+            </ion-card-content>
+          </ion-card>
+    </ion-row>
+    </ion-grid>
+     
 </ion-content>
